@@ -31,6 +31,7 @@ const IconButton: FC<IconButtonProps> = ({ label }) => {
         height: "32px",
         background: "#e9ebef",
         justifyContent: "space-between",
+        textTransform: "none",
         "&:hover": {
           color: "#fff",
           background: "#b2bac7",

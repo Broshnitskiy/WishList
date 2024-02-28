@@ -13,7 +13,7 @@ const SolidButton: FC<SolidButtonProps> = ({ label }) => {
         background: "#405eff",
         padding: "9px 14px",
         height: "36px",
-        // width: "300px",
+        textTransform: "none",
         fontWeight: 700,
         fontSize: "12px",
         color: "#fff",

@@ -36,7 +36,7 @@ const ListTitle = () => {
       </Typography>
       <Typography
         component="p"
-        sx={typographyStyles({ ml: "auto", mr: "20px" })}
+        sx={typographyStyles({ ml: "auto", mr: "20px", opacity: 0.75 })}
       >
         Stock
       </Typography>

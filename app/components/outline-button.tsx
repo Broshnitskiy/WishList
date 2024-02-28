@@ -14,6 +14,7 @@ const OutlineButton: FC<OutlineButtonProps> = ({ label, addStyles }) => {
         fontWeight: 700,
         fontSize: "12px",
         color: "#405eff",
+        textTransform: "none",
         ...addStyles,
       }}
     >
