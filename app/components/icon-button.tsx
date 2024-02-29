@@ -1,44 +1,37 @@
-"use client";
-
-import { FC, useState } from "react";
+import { FC } from "react";
 import { Button } from "@mui/material";
 import { MdDelete } from "react-icons/md";
 
 interface IconButtonProps {
   label: string;
+  active: string;
+  handleClick: (a: string) => void;
 }
 
-const IconButton: FC<IconButtonProps> = ({ label }) => {
-  const [isHovered, setHovered] = useState(false);
-
-  const iconColor = isHovered ? "#fff" : "#B2BAC7";
+const IconButton: FC<IconButtonProps> = ({ label, active, handleClick }) => {
+  const isActive = active === label.toLowerCase();
 
   return (
     <Button
       variant="contained"
       endIcon={
         <MdDelete
-          color={iconColor}
+          color={isActive ? "#fff" : "#B2BAC7"}
           style={{ transition: "background 0.3s, color 0.3s" }}
         />
       }
       sx={{
         fontWeight: 700,
         fontSize: "12px",
-        color: "#303031",
+        color: isActive ? "#fff" : "#303031",
         borderRadius: "4px",
         padding: "4px 10px",
         height: "32px",
-        background: "#e9ebef",
+        background: isActive ? "#b2bac7" : "#e9ebef",
         justifyContent: "space-between",
         textTransform: "none",
-        "&:hover": {
-          color: "#fff",
-          background: "#b2bac7",
-        },
       }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onClick={() => handleClick(label.toLowerCase())}
     >
       {label}
     </Button>

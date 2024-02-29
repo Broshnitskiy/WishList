@@ -10,5 +10,6 @@ export const dataProdList = [
     qty: "56 qty.",
     price: "48 €",
     price_2: "15.45 $",
+    category:"phones",
   },
 ];

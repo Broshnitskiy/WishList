@@ -5,6 +5,7 @@ import OutlineButton from "./outline-button";
 
 interface IProdCardProp {
   data: {
+    id: number;
     img: StaticImageData;
     code: number;
     name: string;
@@ -12,6 +13,7 @@ interface IProdCardProp {
     qty: string;
     price: string;
     price_2: string;
+    category: string;
   };
 }
 
