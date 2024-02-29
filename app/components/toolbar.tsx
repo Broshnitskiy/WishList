@@ -14,9 +14,11 @@ const Toolbar = () => {
   return (
     <Box
       sx={(theme) => ({
+        pt: "20px",
+        pb: "10px",
         [theme.breakpoints.up("sm")]: {
           pt: "52px",
-          pb: "20px",
+          pb: "6px",
         },
       })}
     >

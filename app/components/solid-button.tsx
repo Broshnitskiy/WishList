@@ -3,9 +3,10 @@ import { Button } from "@mui/material";
 
 interface SolidButtonProps {
   label: string;
+  addStyles?: Record<string, any>;
 }
 
-const SolidButton: FC<SolidButtonProps> = ({ label }) => {
+const SolidButton: FC<SolidButtonProps> = ({ label, addStyles }) => {
   return (
     <Button
       variant="contained"
@@ -17,6 +18,7 @@ const SolidButton: FC<SolidButtonProps> = ({ label }) => {
         fontWeight: 700,
         fontSize: "12px",
         color: "#fff",
+        ...addStyles,
       }}
     >
       {label}

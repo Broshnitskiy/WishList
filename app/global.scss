@@ -1,5 +1,57 @@
 .wrapper {
   min-height: 100vh;
-  padding: 52px 30px;
   background: #f6f7f9;
+}
+
+main {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 90px;
+
+  @media screen and (min-width: "1200px") {
+    padding-top: 233px;
+    padding-bottom: 130px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.header {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: "1200px") {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background: #f6f7f9;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background: #f6f7f9;
+
+  @media screen and (min-width: "1200px") {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 73px;
+  }
+}
+
+a {
+  text-decoration: none;
 }

@@ -1,13 +1,19 @@
 import Toolbar from "./components/toolbar";
 import DataList from "./components/data-list";
-import SolidButton from "./components/solid-button";
+import FooterBar from "./components/footer-bar";
 
 export default function Home() {
   return (
-    <main className="wrapper">
-      <Toolbar />
-      <DataList />
-      <SolidButton label="Add to cart" />
-    </main>
+    <div className="wrapper">
+      <header className="header">
+        <Toolbar />
+      </header>
+      <main>
+        <DataList />
+      </main>
+      <footer className="footer">
+        <FooterBar />
+      </footer>
+    </div>
   );
 }

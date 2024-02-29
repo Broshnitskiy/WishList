@@ -25,25 +25,25 @@ const ListTitle = () => {
         },
       })}
     >
-      <Typography component="p" sx={typographyStyles({ ml: "30px" })}>
+      <Typography component="p" sx={typographyStyles({ ml: "4%" })}>
         Photo
       </Typography>
-      <Typography component="p" sx={typographyStyles({ ml: "30px" })}>
+      <Typography component="p" sx={typographyStyles({ ml: "4%" })}>
         Product code
       </Typography>
-      <Typography component="p" sx={typographyStyles({ ml: "30px" })}>
+      <Typography component="p" sx={typographyStyles({ ml: "2%" })}>
         Name
       </Typography>
       <Typography
         component="p"
-        sx={typographyStyles({ ml: "auto", mr: "20px", opacity: 0.75 })}
+        sx={typographyStyles({ ml: "auto", mr: "6%", opacity: 0.75 })}
       >
         Stock
       </Typography>
-      <Typography component="p" sx={typographyStyles({ mr: "20px" })}>
+      <Typography component="p" sx={typographyStyles({ mr: "7%" })}>
         QTY
       </Typography>
-      <Typography component="p" sx={typographyStyles({ mr: "20px" })}>
+      <Typography component="p" sx={typographyStyles({ mr: "14.5%" })}>
         Price
       </Typography>
       <FormControlLabel
